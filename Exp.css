@@ -1,0 +1,227 @@
+/* Exp*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation */
+nav {
+    background-color: #e3cfeb;
+    padding: 15px;
+    text-align: right;
+
+    a {
+        color: rgb(44, 45, 45);
+        text-decoration: none;
+        padding: 10px;
+        font-weight: bold;
+    }
+}
+
+
+
+/* Body website */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+    .image-container {
+        text-align: center;
+    }
+
+    .fixed-image {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: opacity 0.5s ease;
+    }
+
+    /* สไตล์สำหรับรูปภาพแนะนำ */
+    .intro-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    /* สไตล์สำหรับรูปภาพ */
+    .fixed-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .main-container {
+        width: 100%;
+        max-width: 1400px;
+        height: 600px;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .intro-image-container.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* รูป medeze */
+    .intro-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+    
+    .intro-image {
+        width: 1000px; /* ปรับขนาดตามต้องการ */
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* สไตล์สำหรับคอนเทนเนอร์ของประสบการณ์ */
+    .experience-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    .experience-row {
+        display: flex;
+        width: 60%;
+        margin: 20px 0;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        font-size: 20px;
+        text-align: justify;
+        font-family: 'IBM Plex Sans Thai', sans-serif;
+
+        .res {
+            color: rgb(27, 28, 75);
+        }
+
+        .presenting {
+            color: rgb(27, 28, 75);
+        }
+
+        .detail2 {
+            line-height: 1.7;
+            text-indent: 50px;
+        }
+
+        .detail {
+            line-height: 1.7;
+            text-indent: 50px;
+        }
+
+    }
+    
+    .experience-row.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .column {
+        flex: 1;
+        padding: 10px;
+    }
+
+    /* จัดกึ่งกลางรูปภาพในคอลัมน์ */
+    .column img {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .experience-image {
+        width: 70%;
+        height: auto;
+        border-radius: 10px;
+        align-items: center;
+    }
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #e3cfeb;
+    color: rgb(53, 52, 52);
+    padding: 20px 0;
+    margin-top: auto;
+    flex: 0 0 auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+    padding: 0 80px;
+}
+
+.footer-left h3, .footer-right h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f7f2d7;
+    color: rgb(65, 64, 64);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #d9f9f5;
+}
+
+.footer-right p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.footer-right .social {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.footer-right .social a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgb(95, 94, 95);
+    padding: 5px;
+}
+
+.footer-right .social a:hover {
+    text-decoration: underline;
+}
